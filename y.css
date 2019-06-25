@@ -1,0 +1,140 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+
+h1{
+  color: rgb(106, 90, 205);
+}
+
+h2{
+  color: rgb(60, 179, 113);
+}
+
+/* Style the header */
+header {
+    background-color:rgb(180, 180, 180);
+    padding: 20px;
+    text-align: center;
+}
+
+/* Style the top navigation bar */
+nav {
+    overflow: hidden;
+    background-color: #333;
+}
+
+/* Style the topnav links */
+nav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change color on hover */
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Create three unequal columns that floats next to each other */
+article {
+    border: 1px solid grey;
+    background-color: red;
+    float: left;
+    padding: 20px;
+}
+
+/* Left and right column */
+aside {
+    width: 25%;
+    float: right;
+}
+
+/* Middle column */
+section {
+    width: 75%;
+    float: left;
+}
+
+/* Clear floats after the columns */
+article:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+img {
+	max-width: 100%;
+	height:auto;
+}
+
+p {
+	font-size: 0.9375rem;
+	color:#0F3;
+	font-style:italic;
+}
+
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media only screen and (max-width: 800px) {
+  article, section, aside, footer {   
+        width: 100%;
+        padding: 10px;
+    }
+	
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media only screen and (max-width: 500px) {
+     nav a {
+        float: none;
+        width:100%;
+    }
+	
+	.designer{
+		float: left;
+		width: 100%;
+		text-align:left;
+		}
+		
+	.piva{
+  		font-style: italic;
+  		float: left;
+  		width: 100%;
+		text-align:left;
+ 		}
+}
+
+/* Style the footer */
+footer {
+    background-color: #3cb371;
+    padding: 10px;
+	text-align: center;
+	 
+    
+}
+
+.designer{
+  font-family: "Times New Roman", Times, serif;
+  float: right;
+}
+
+.piva{
+  font-style: italic;
+  float: left;
+ 
+}
+
+
