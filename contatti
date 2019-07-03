@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="y.css">
+<script type="text/javascript" src="pic.js">
+</script>
+</head>
+<body>
+<header>
+  <h1>Header</h1>
+  <h2>Welcome to my website</h2>
+</header>
+
+<nav>
+  <a href="x.html" target="_self">Home</a>
+  <a href="chi_sono.html" target="_self">Who i am</a>
+  <a href="contatti.html" target="_self">Contacts</a>
+</nav>
+
+<article>
+	
+  <section>
+  <h2>Form action</h2>
+  	<p>Fill the form, please</p>
+    <form action="/action_page.php">
+First name:<br>
+<input type="text" name="firstname" value="Mickey">
+<br>
+Last name:<br>
+<input type="text" name="lastname" value="Mouse">
+<br><br>
+<input type="submit" value="Submit">
+<input type="reset">
+</form> 
+  </section>
+  <aside>
+    <h2>Side</h2>
+    <img src="https://www.w3schools.com/images/picture.jpg" alt="picture" width="460" height="345">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit..</p>
+  </aside>
+
+</article>
+
+<footer class="colorf">
+	<p class="designer">Powered by Michele Riccio</p>
+  	<p class="piva">BEPPEGRILLO.IT 2018 - P.Iva: 02506570999</p>
+</footer>
+
+</body>
+</html>
