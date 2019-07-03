@@ -1,3 +1,5 @@
+
+
 @charset "utf-8";
 /* CSS Document */
 
@@ -6,7 +8,8 @@
 }
 
 body {
-  margin: 0;
+	
+	margin: 0;
 }
 
 
@@ -48,11 +51,19 @@ nav a:hover {
 }
 
 /* Create three unequal columns that floats next to each other */
+
 article {
     border: 1px solid grey;
     background-color: red;
     float: left;
     padding: 20px;
+}
+
+article section {
+	width: 840px;
+	height: 270px;
+	padding: 0 0 0 30px;
+	margin: 0 0 0 10px;
 }
 
 /* Left and right column */
@@ -85,36 +96,64 @@ p {
 	font-style:italic;
 }
 
-
-
-/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-@media only screen and (max-width: 800px) {
-  article, section, aside, footer {   
-        width: 100%;
-        padding: 10px;
-    }
-	
+.ab{
+	height: 100%;
+	width:1349px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-@media only screen and (max-width: 500px) {
-     nav a {
-        float: none;
-        width:100%;
-    }
-	
-	.designer{
-		float: left;
-		width: 100%;
-		text-align:left;
-		}
-		
-	.piva{
-  		font-style: italic;
-  		float: left;
-  		width: 100%;
-		text-align:left;
- 		}
+.ac{
+	background-color: #B10DC9;
+  width: 600px;
+  height: 600px;
+  
+}
+#gallery {
+  display: block;
+  position: relative;
+  top: 20px;
+  right: 15px;
+  width:100%;
+}
+ul{
+	display:block;
+    list-style: none;
+    border: 1px solid #b2b2b2;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+ul li a{
+	font-weight: bold;
+    text-decoration: none;
+    line-height: 2.8em;
+    padding-right: 0.5em;
+    color: #696969;
+}
+
+ul li a:hover{
+	color: yellow;
+}
+
+
+
+
+.back {
+	background-color: #FF4136;
+  position: absolute;
+  left: 35%;
+  top: 90%;
+  transform: translate(-50%, -50%);
+}
+
+.next {
+	background-color: #FF4136;
+  position: absolute;
+  left: 65%;
+  top: 90%;
+  transform: translate(-50%, -50%);
 }
 
 /* Style the footer */
@@ -137,4 +176,184 @@ footer {
  
 }
 
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media only screen and (max-width: 1024px) {
+  article, section, aside, footer, article section {   
+        width: 100%;
+        padding: 10px;
+    }
+	
+	.ab{
+	height: auto;
+	width:100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ac{
+	background-color: #B10DC9;
+  	width: 300px;
+  	height: 300px;
+  
+}
+#gallery {
+  display: block;
+  position: relative;
+  top: 10px;
+  left: 1px;
+  width:100%;
+}
+
+.back {
+	background-color: #FF4136;
+  position: relative;
+  left: 35%;
+  top: 20%;
+  transform: translate(-50%, -50%);
+}
+
+.next {
+	background-color: #FF4136;
+  position: relative;
+  left: 50%;
+  top: 20%;
+  transform: translate(-50%, -50%);
+}
+
+ul{
+	display:block;
+    list-style: none;
+    border: 1px solid #b2b2b2;
+    padding: 10px;
+    margin: 0;
+}
+
+ul li a{
+	font-weight: bold;
+    text-decoration: none;
+    line-height: 1.4em;
+    padding-right: 0em;
+    color: #696969;
+}
+
+ul li a:hover{
+	color: yellow;
+}
+
+
+aside {
+    width: 100%;
+	height: auto;
+    float: none;
+	position:relative;
+	top: 15px;
+	left: 10px;
+}
+	
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media only screen and (max-width: 480px) {
+     nav a {
+        float: none;
+        width:100%;
+    }
+	aside {
+    width: 100%;
+	height:auto;
+    float: none;
+	position:relative;
+	top: 30px;
+	left: 10px;
+	font-size:14px;
+}
+
+.sider {
+	position: relative;
+	top: 13px;
+}
+	
+	.designer{
+  font-family: "Times New Roman", Times, serif;
+  float: none;
+  text-align: left;
+  position:relative;
+  top: 15px;
+}
+		
+	.piva{
+  		font-style: italic;
+  		float: none;
+  		width: 100%;
+		text-align:left;
+		position:relative;
+  top: 15px;
+ 		}
+		
+	.colorf {
+		background-color:#FFF;
+	}
+	.ab {
+		width: 100%;
+		height: auto;
+			
+	}
+	
+	.ac {
+		width: 100%;
+		height: auto;
+		position: relative;
+		top: 5px;
+		left: 1px;
+	}	
+	
+	.back {
+		background-color: #FF4136;
+  position: absolute;
+  left: 35%;
+  top: 83%;
+  transform: translate(-50%, -50%);
+	}
+	
+	.next {
+	background-color: #FF4136;
+  position: absolute;
+  left: 68%;
+  top: 83%;
+  transform: translate(-50%, -50%);
+}
+
+ul{
+	display:block;
+    list-style: none;
+    border: 1px solid #b2b2b2;
+    padding: 0;
+    margin: 0;
+}
+
+ul li a{
+	font-weight: bold;
+    text-decoration: none;
+    line-height: 1.4em;
+    padding-right: 0em;
+    color: #696969;
+}
+
+ul li a:hover{
+	color: yellow;
+}
+
+#gallery {
+  display: block;
+  position: relative;
+  top: 10px;
+  left: 2px;
+  width:100%;
+}
+
+
+}
 
