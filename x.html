@@ -3,7 +3,24 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" type="text/css" href="y.css">
-<script type="text/javascript" src="pic.js">
+<script type="text/javascript">
+// JavaScript Document
+x = new Array("1.jpg", "2.jpg", "3.jpg");
+i = 0;
+
+function next(){
+	i++;
+	if(i==x.length) i=0;
+	document.getElementById("gallery").src = x[i];
+}
+
+function back(){
+	if(i == 0){
+		i=1;
+	}
+	i--;
+	document.getElementById("gallery").src = x[i];
+}
 </script>
 </head>
 <body>
