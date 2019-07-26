@@ -13,7 +13,7 @@
 </header>
 
 <nav>
-  <a href="x.html" target="_self">Home</a>
+  <a href="index.html" target="_self">Home</a>
   <a href="chi_sono.html" target="_self">Who i am</a>
   <a href="contatti.html" target="_self">Contacts</a>
 </nav>
